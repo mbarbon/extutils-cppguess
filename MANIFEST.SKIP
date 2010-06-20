@@ -70,3 +70,11 @@
 
 # Avoid archives of this distribution
 \bExtUtils-CppGuess-[\d\.\_]+
+
+# Ignore test byproducts
+CppGuessTest\.bs
+CppGuessTest\.c
+CppGuessTest\.o
+CppGuessTest\.obj
+^t/module/lib/CppGuessTest.xs$
+^t/module/MYMETA\.
