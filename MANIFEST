@@ -7,6 +7,7 @@ lib/ExtUtils/CppGuess.pm
 t/001_load.t
 t/module/Build.PL
 t/module/CppGuessTest.xs
+t/module/MANIFEST
 t/module/Makefile.PL
 t/module/lib/CppGuessTest.pm
 t/module/t/001_load.t
