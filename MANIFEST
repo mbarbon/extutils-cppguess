@@ -5,6 +5,8 @@ MANIFEST.SKIP
 META.yml
 lib/ExtUtils/CppGuess.pm
 t/001_load.t
+t/010_module_build.t
+t/011_makemaker.t
 t/module/Build.PL
 t/module/CppGuessTest.xs
 t/module/MANIFEST
