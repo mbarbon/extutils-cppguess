@@ -23,7 +23,7 @@ if( $build_pl_ok != 0 ) {
     exit 1;
 }
 
-my $build = `./Build 2>&1`;
+my $build = `$^X Build 2>&1`;
 my $build_ok = $?;
 
 if( $build_ok != 0 ) {
@@ -34,7 +34,7 @@ if( $build_ok != 0 ) {
     exit 1;
 }
 
-my $build_test = `./Build test 2>&1`;
+my $build_test = `$^X Build test 2>&1`;
 my $build_test_ok = $?;
 
 if( $build_test_ok != 0 ) {
