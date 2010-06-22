@@ -7,6 +7,29 @@ use warnings;
 
 ExtUtils::CppGuess - guess C++ compiler and flags
 
+=head1 SYNOPSIS
+
+With L<Extutils::MakeMaker>:
+
+    use ExtUtils::CppGuess;
+
+    my $guess = ExtUtils::CppGuess->new;
+
+    WriteMakefile
+      ( # MakeMaker args,
+        $guess->makemaker_options,
+        );
+
+With L<Module::Build>:
+
+    my $guess = ExtUtils::CppGuess->new;
+
+    my $build = Module::Build->new
+      ( # Module::Build arguments
+        $guess->module_build_options,
+        );
+    $build->create_build_script;
+
 =cut
 
 use Config;
